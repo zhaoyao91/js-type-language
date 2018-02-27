@@ -16,8 +16,9 @@ Help define types for JS.
 - `function`
 - `null`
 - `undefined`
-- `void` - used for functions which mean to return nothing
+- `void` - used for output of function which mean to return nothing
 - `any`
+- `promise`
 
 ## Array Type
 
@@ -27,17 +28,19 @@ Help define types for JS.
 ## Object
 
 - `{item1, item2, item3}` - each item must have name
-- `{item1 => item2}` - for map from item1 to item2
+- `{item1 -> item2}` - for map from item1 to item2
 
 ## Function Type
 
-- `(item1, item2, item3) => item`
-- `(item1, item2, ...item3) => item`
+- `(item1, item2, item3) => type`
+- `(item1, item2, ...item3) => type`
+- `(item1, item2, item3) -> item`
+- `(item1, item2, ...item3) -> item`
 
-The formats below are generally used for high order functions: 
+## Promise Type
 
-- `(item1, item2, item3) -> type`
-- `(item1, item2, ...item3) -> type`
+- `promise => type`
+- `promsie -> item`
 
 ## Type Logic
 

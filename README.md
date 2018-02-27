@@ -1,0 +1,41 @@
+# JS Type Language
+
+Help define types for JS.
+
+## Introduction
+
+The point is simple: to doc my js things.
+
+[TypeScript](https://www.typescriptlang.org/) and [Flow](https://flow.org/) are both great tools to enhance js with 
+static type checking ability. However, they are intrusive, you are no longer writing pure js, and you have to setup tons 
+of tools to translate your code before writing.
+
+[JSDoc](http://usejsdoc.org/) seems match the initial requirement, but it is really a big monster with too many knifes
+and forks to fulfill my little wish. 
+
+So, I create this repo, wish to create something clear, simple and easy while enough to express what js code failed to 
+say, either in comments or documents.
+
+## Products
+
+- [JS Type Language](./js-type-language.md)
+- [JS Type Comment Language](./js-type-comment-language.md)
+
+## Show Case
+
+```ecmascript 6
+
+/**
+ * (name: string = 'Bob', age: number) => Result
+ * 
+ * Result: {
+ *   name: string,
+ *   age: number,
+ * }
+ */
+function buildBob(name = 'Bob', age) {return {name, age}}
+```
+
+## License
+
+MIT
