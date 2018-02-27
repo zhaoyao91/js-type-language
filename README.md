@@ -11,7 +11,7 @@ static type checking ability. However, they are intrusive, you are no longer wri
 of tools to translate your code before writing.
 
 [JSDoc](http://usejsdoc.org/) seems match the initial requirement, but it is really a big monster with too many knifes
-and forks to fulfill my little wish. 
+and forks to fulfill my little wish. It also failed to provide ability to define custom function type.
 
 So, I create this repo, wish to create something clear, simple and easy while enough to express what js code failed to 
 say, either in comments or documents.
