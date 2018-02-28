@@ -6,19 +6,30 @@ Help define types for JS.
 
 - Version: 0.0.0
 
+## What is a *Type*?
+
+A type is a set of allowed values which share the features defined in this type, and the set could be finite or infinite.
+
 ## Basic Types
 
 - `number`
 - `string`
-- `bool / boolean`
+- `bool` or `boolean`
 - `object`
 - `array`
 - `function`
-- `null`
-- `undefined`
 - `void` - used for output of function which mean to return nothing
 - `any`
 - `promise`
+
+## Literal Types
+
+Literal types are types which each has only one value that you give.
+
+- `null`
+- `undefined`
+- numerical literal type, such as: `1`, `256`, `NaA`
+- string literal type, such as: `"Bob"`, `"Alice"`, `"doge"`
 
 ## Array Type
 
