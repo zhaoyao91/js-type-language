@@ -28,6 +28,7 @@ Help define types for JS.
 ## Object
 
 - `{item1, item2, item3}` - each item must have name
+- `{item => type}` - for map from given item to some item of given type
 - `{item1 -> item2}` - for map from item1 to item2
 
 ## Function Type
@@ -45,6 +46,7 @@ Help define types for JS.
 ## Type Logic
 
 - `type1 | type2` - type1 or type2
+- `type1 & type2` - type1 and type2
 
 ## Item
 
@@ -73,4 +75,4 @@ Help define types for JS.
 
 ## Custom Type (Type Alias)
 
-- `Type: type` - custom type must be capitalized
+- `Type ~ type` - generally, custom type should be capitalized

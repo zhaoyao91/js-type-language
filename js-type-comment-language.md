@@ -35,7 +35,7 @@ Below the type, you can write more types, which can further define any custom ty
 /**
  * (name: string, age: number) => Result
  * 
- * Result: {
+ * Result ~ {
  *   name: string,
  *   age: number,
  * }
@@ -51,7 +51,7 @@ You can add more arbitrary comments with leading `//`:
  * // create a great Bob
  * (name: string = 'Bob', age: number) => Result
  * 
- * Result: {
+ * Result ~ {
  *   name: string, // the name of Bob
  *   age: number, // the age of Bob
  * }

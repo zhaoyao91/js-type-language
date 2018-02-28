@@ -28,7 +28,7 @@ say, either in comments or documents.
 /**
  * (name: string = 'Bob', age: number) => Result
  * 
- * Result: {
+ * Result ~ {
  *   name: string,
  *   age: number,
  * }
