@@ -14,13 +14,13 @@ A type is a set of allowed values which share the features defined in this type,
 
 - `number`
 - `string`
-- `bool` or `boolean`
+- `boolean`
 - `object`
 - `array`
 - `function`
-- `void` - used for output of function which mean to return nothing
-- `any`
 - `promise`
+- `any`
+- `void` - used for output of function which mean to return nothing
 
 ## Literal Types
 
@@ -29,7 +29,7 @@ Literal types are types which each has only one value that you give.
 - `null`
 - `undefined`
 - numerical literal type, such as: `1`, `256`, `NaA`
-- string literal type, such as: `"Bob"`, `"Alice"`, `"doge"`
+- string literal type, such as: `"Bob"`, `"Alice"`, `'doge'`
 
 ## Array Type
 
@@ -39,18 +39,15 @@ Literal types are types which each has only one value that you give.
 ## Object
 
 - `{item1, item2, item3}` - each item must have name
-- `{item => type}` - for map from given item to some item of given type
-- `{item1 -> item2}` - for map from item1 to item2
+- `{item1 => item1}` - for map from item1 to item2
 
 ## Function Type
 
-- `(item1, {item2, item3}, [item4, item5] ...item6) => type`
-- `(item1, {item2, item3}, [item4, item5] ...item6) -> item`
+- `(item1, item2 ...item3) => item`
 
 ## Promise Type
 
-- `promise => type`
-- `promsie -> item`
+- `promise => item`
 
 ## Type Logic
 
@@ -61,21 +58,21 @@ Literal types are types which each has only one value that you give.
 
 ### name version
 
-- `a`
-- `a?`
-- `a = value`
+- `name:`
+- `name:?`
+- `name: = value`
 
 ### type version
 
-- `:type`
-- `:type?`
-- `:type = value`
+- `type`
+- `type?`
+- `type = value`
 
 ### full version
 
-- `a: type`
-- `a: type?`
-- `a: type = value`
+- `name: type`
+- `name: type?`
+- `name: type = value`
 
 ### Notes
 
