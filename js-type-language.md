@@ -49,6 +49,12 @@ Literal types are types which each has only one value that you give.
 
 - `promise => item`
 
+## Generic Types
+
+- `Set<type>`
+- `Map<type, type>`
+- `type<type, ...>`
+
 ## Type Logic
 
 - `type1 | type2` - type1 or type2
