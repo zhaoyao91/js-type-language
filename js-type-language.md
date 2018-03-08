@@ -12,15 +12,15 @@ A type is a set of allowed values which share the features defined in this type,
 
 ## Basic Types
 
-- `number`
-- `string`
-- `boolean`
-- `object`
-- `array`
-- `function`
-- `promise`
-- `any`
-- `void` - used for output of function which mean to return nothing
+- `Number`
+- `String`
+- `Boolean`
+- `Object`
+- `Array`
+- `Function`
+- `Promise`
+- `Any`
+- `Void` - used for output of function which mean to return nothing
 
 ## Literal Types
 
@@ -33,7 +33,7 @@ Literal types are types which each has only one value that you give.
 
 ## Array Type
 
-- `type[]`
+- `Type[]`
 - `[item1, item2, item3]` - for tuple
 
 ## Object
@@ -47,38 +47,40 @@ Literal types are types which each has only one value that you give.
 
 ## Promise Type
 
-- `promise => item`
+- `Promise => item`
 
 ## Generic Types
 
-- `Set<type>`
-- `Map<type, type>`
-- `type<type, ...>`
+- `Set<Type>`
+- `Map<Type, Type>`
+- `Type<Type, ...>`
 
 ## Type Logic
 
-- `type1 | type2` - type1 or type2
-- `type1 & type2` - type1 and type2
+- `Type1 | Type2` - type1 or type2
+- `Type1 & Type2` - type1 and type2
 
 ## Item
 
+Except of `null` and `undefined`, names are lower camel cases and types are upper camel cases.
+
 ### name version
 
-- `name:`
-- `name:?`
-- `name: = value`
+- `name`
+- `name?`
+- `name = value`
 
 ### type version
 
-- `type`
-- `type?`
-- `type = value`
+- `Type`
+- `Type?`
+- `Type = value`
 
 ### full version
 
-- `name: type`
-- `name: type?`
-- `name: type = value`
+- `name: Type`
+- `name: Type?` or `name?: Type`
+- `name: Type = value`
 
 ### Notes
 
@@ -87,4 +89,4 @@ Literal types are types which each has only one value that you give.
 
 ## Custom Type (Type Alias)
 
-- `Type ~ type` - generally, custom type should be capitalized
+- `Type2 ~ Type1`

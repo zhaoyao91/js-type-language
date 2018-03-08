@@ -26,11 +26,11 @@ say, either in comments or documents.
 ```ecmascript 6
 
 /**
- * (name: string = 'Bob', age: number) => Result
+ * (name: String = 'Bob', age: Number) => Result
  * 
  * Result ~ {
- *   name: string,
- *   age: number,
+ *   name: String,
+ *   age: Number,
  * }
  */
 function buildBob(name = 'Bob', age) {return {name, age}}

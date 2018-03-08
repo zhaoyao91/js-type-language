@@ -23,7 +23,7 @@ Then, write a type using JS type language, which denotes the type of the thing y
 ```ecmascript 6
 
 /**
- * (name: string, age: number) => Result
+ * (name: String, age: String) => Result
  */
 function buildBob(name, age) {return {name, age}}
 ```
@@ -33,11 +33,11 @@ Below the type, you can write more types, which can further define any custom ty
 ```ecmascript 6
 
 /**
- * (name: string, age: number) => Result
+ * (name: String, age: String) => Result
  * 
  * Result ~ {
- *   name: string,
- *   age: number,
+ *   name: String,
+ *   age: Number,
  * }
  */
 function buildBob(name, age) {return {name, age}}
@@ -49,11 +49,11 @@ You can add more arbitrary comments with leading `//`:
 
 /**
  * // create a great Bob
- * (name: string = 'Bob', age: number) => Result
+ * (name: String = 'Bob', age: String) => Result
  * 
  * Result ~ {
- *   name: string, // the name of Bob
- *   age: number, // the age of Bob
+ *   name: String, // the name of Bob
+ *   age: Number, // the age of Bob
  * }
  */
 function buildBob(name = 'Bob', age) {return {name, age}}
