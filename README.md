@@ -16,25 +16,9 @@ and forks to fulfill my little wish. It also failed to provide ability to define
 So, I create this repo, wish to create something clear, simple and easy while enough to express what js code failed to 
 say, either in comments or documents.
 
-## Products
+## Document
 
-- [JS Type Language](./js-type-language.md)
-- [JS Type Comment Language](./js-type-comment-language.md)
-
-## Show Case
-
-```ecmascript 6
-
-/**
- * (name: String = 'Bob', age: Number) => Result
- * 
- * Result ~ {
- *   name: String,
- *   age: Number,
- * }
- */
-function buildBob(name = 'Bob', age) {return {name, age}}
-```
+[JS Type Language](./js-type-language.md)
 
 ## License
 
