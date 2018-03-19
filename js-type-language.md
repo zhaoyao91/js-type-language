@@ -8,7 +8,9 @@ Help define types for JS.
 
 ## What is a *Type*?
 
-A type is a set of allowed values which share the features defined in this type, and the set could be finite or infinite.
+A *type* is a set of allowed values which share the features defined by this type.
+
+The value set could be finite or infinite.
 
 ## Basic Types
 
