@@ -30,7 +30,7 @@ Literal types are types which each has only one value that you give.
 
 - `null`
 - `undefined`
-- numerical literal type, such as: `1`, `256`, `NaA`
+- numerical literal type, such as: `1`, `256`, `NaN`
 - string literal type, such as: `"Bob"`, `"Alice"`, `'doge'`
 
 ## Array Type
