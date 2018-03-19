@@ -71,15 +71,17 @@ Literal types are types which each has only one value that you give.
 
 Except of `null` and `undefined`, names are lower camel cases and types are upper camel cases.
 
+In rare cases, use `-` to indicate a name and use `+` to indicate a type.
+
 ### name version
 
-- `name`
+- `name` or `-Name`
 - `name?`
 - `name = value`
 
 ### type version
 
-- `Type`
+- `Type` or `+type`
 - `Type?`
 - `Type = value`
 
