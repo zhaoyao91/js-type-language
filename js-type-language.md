@@ -37,10 +37,14 @@ Literal types are types which each has only one value that you give.
 
 - `Type[]`
 - `[item1, item2, item3]` - for tuple
+- `[item1, item2, ...]`
+- `[ite1, item2, ...item3]`
 
 ## Object
 
 - `{item1, item2, item3}` - each item must have name
+- `{item1, item2, ...}` - there are more unknown fields in this object
+- `{item1, item2, ...item3}` - there are more fields in this object besides item1 and item2 and they all form item3.
 - `{item1 => item1}` - for map from item1 to item2
 
 ## Function Type
