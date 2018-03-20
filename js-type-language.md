@@ -22,7 +22,7 @@ The value set could be finite or infinite.
 - `Function`
 - `Promise`
 - `Any`
-- `Void` - used for output of function which mean to return nothing
+- `Void` - alias to `undefined`
 
 ## Literal Types
 
