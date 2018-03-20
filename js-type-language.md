@@ -66,34 +66,46 @@ Literal types are types which each has only one value that you give.
 - `Type1 | Type2` - type1 or type2
 - `Type1 & Type2` - type1 and type2
 
+## Optional Type
+
+- `Type?` - alias to `Type | Void | null`
+
 ## Item
+
+An *item* is some name of some type. It is used in some context:
+
+- as object field
+- as array item
+- as function argument
+- to define a name to be of some type
 
 Except of `null` and `undefined`, names are lower camel cases and types are upper camel cases.
 
 In rare cases, use `-` to indicate a name and use `+` to indicate a type.
 
-### name version
+### name version (ignoring type)
 
 - `name` or `-Name`
-- `name?`
-- `name = value`
+- `name?` - this item is optional, which means
+  - in an object, this field may not exist
+  - in an array, this item may be `Void`
+  - in an function, this arg may be `Void`
+- `name = value` - specify default value
 
-### type version
+### type version (ignoring name)
 
 - `Type` or `+type`
-- `Type?`
-- `Type = value`
+- `Type?` - this item is of a maybe type, see [optional type](#optional-type)
+- `?Type` - this item is optional, see [name?](#type-version-(ignoring-name))
+- `Type = value` - specify default value
 
 ### full version
 
 - `name: Type`
-- `name: Type?` or `name?: Type`
 - `name: Type = value`
-
-### Notes
-
-- If some item is with `?`, it is optional and its value could be `undefined`.
-- If some item is with `= value` it is optional and if it is `undefined`, it will be set to `value`.
+- `name: Type?`
+- `name?: Type`
+- `name?: Type?`
 
 ## Custom Type (Type Alias)
 
