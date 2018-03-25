@@ -50,6 +50,7 @@ Literal types are types which each has only one value that you give.
 ## Function Type
 
 - `(item1, item2 ...item3) => item`
+- `(item1, item2 ...item3): Type => item` - `: Type` is the type of this binding of the function
 
 ## Promise Type
 
